@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+}
+
+.inter {
+  width: 32%;
+  background-color: red;
+  height: 500px;
+}
+
+@media screen and (max-width:1600px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .inter{
+    width: 100%;
+  }
+
+}
